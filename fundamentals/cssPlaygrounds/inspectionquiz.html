@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/playground.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/playground.css" />
     <script src="../../js/components/toolNav.js"></script>
     <script src="../../js/components/footer.js"></script>
     <title>Block & Inline-Block</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>BeeDev Services Helper Website</h1>
-        <tool-component></tool-component>
-        <nav class="toolsNav">
-            <a href="../tools.html">Back to Tools Page</a>
-        </nav>
+      <h1>BeeDev Services Helper Website</h1>
+      <tool-component></tool-component>
+      <nav class="toolsNav">
+        <a href="../tools.html">Back to Tools Page</a>
+      </nav>
     </header>
     <main>
-        <h1 class="centerText">Inspection Quiz</h1>
-        <div id="quiztext" class="quiztext">
-        <!-- was <div id="blockDiv1" class="displayDiv">-->
-            <p>HTML, originating in 1991 by Tim Berners-Lee, marked the foundation of web development. Initially a basic markup language, it defined the structure of early web pages. Over time, HTML evolved through versions, with HTML5 (2014) introducing multimedia support, semantic elements, and improved accessibility, shaping today's web landscape.</p>
-            <p>CSS emerged in 1996, driven by Håkon Wium Lie and Bert Bos, addressing HTML's visual limitations. It separated style from structure, enabling precise design control. CSS2 (1998) introduced more styling options, while CSS3 advancements (2001 onward) expanded capabilities with animations, transitions, and responsive design, revolutionizing web aesthetics.</p>
-            <p>JavaScript, created by Brendan Eich in 1995 at Netscape, added interactivity to static web pages. Initially named LiveScript, it evolved rapidly, gaining popularity for client-side scripting. ECMAScript standards (1997 onward) standardized JavaScript, leading to powerful libraries like jQuery, frameworks like Angular and React, and its ubiquitous use in modern web development.</p>
-            <p>The intertwined evolution of HTML, CSS, and JavaScript has continually shaped the digital landscape. From their humble beginnings to the sophisticated tools they've become, these technologies remain the backbone of web development, enabling creativity, functionality, and seamless user experiences across the vast online world.</p>
+      <h1 class="centerText">Inspection Quiz</h1>
+      <div id="blockDiv1" class="displayDiv">
+        <h2>Directions:</h2>
+        <p>
+          Right-click on this webpage, then click Inspect to use the Inspect
+          Element. Inspect the text block below titled "HTML, CSS, and
+          JavaScript Facts" to answer the corresponding questions about HTML and
+          CSS.
+        </p>
+      </div>
+      <div id="blockDiv1" class="displayDiv">
+        <h2>HTML, CSS, and JavaScript Facts</h2>
+        <hr />
+        <h3>HTML</h3>
+        <p>
+          HTML, originating in 1991 by Tim Berners-Lee, marked the foundation of
+          web development. Initially a basic markup language, it defined the
+          structure of early web pages. <br />Over time, HTML evolved through
+          versions, with HTML5 (2014) introducing multimedia support, semantic
+          elements, and improved accessibility, shaping today's web landscape.
+        </p>
+        <h3>CSS</h3>
+        <p>
+          CSS emerged in 1996, driven by Håkon Wium Lie and Bert Bos, addressing
+          HTML's visual limitations. It separated style from structure, enabling
+          precise design control. CSS2 (1998) introduced more styling options,
+          while CSS3 advancements (2001 onward) expanded capabilities with
+          animations, transitions, and responsive design, revolutionizing web
+          aesthetics.
+        </p>
+        <h3>JavaScript</h3>
+        <p>
+          JavaScript, created by Brendan Eich in 1995 at Netscape, added
+          interactivity to static web pages. Initially named LiveScript, it
+          evolved rapidly, gaining popularity for client-side scripting.
+          ECMAScript standards (1997 onward) standardized JavaScript, leading to
+          powerful libraries like jQuery, frameworks like Angular and React, and
+          its ubiquitous use in modern web development.
+        </p>
+        <p>
+          The intertwined evolution of HTML, CSS, and JavaScript has continually
+          shaped the digital landscape. From their humble beginnings to the
+          sophisticated tools they've become, these technologies remain the
+          backbone of web development, enabling creativity, functionality, and
+          seamless user experiences across the vast online world.
+        </p>
+      </div>
+      <div class="altBottom">
+        <h3>Questions:</h3>
+        <p>1. What heading tag is used for the title?</p>
+        <div class="mutuallyExclusiveButtons">
+          <button class="multiplechoice" onclick="">h1 tag</button>
+          <button class="multiplechoice" onclick="">h2 tag</button>
+          <button class="multiplechoice" onclick="">h3 tag</button>
         </div>
-        <div class="altBottom">
-            <p>Question Number One will appear right here....</p>
-            <div class="mutuallyExclusiveButtons">
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-            </div>
-            <p>Question Number two will appear right here....</p>
-            <div class="mutuallyExclusiveButtons">
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-            </div>
-            <p>Question Number three will appear right here....</p>
-            <div class="mutuallyExclusiveButtons">
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-            </div>
-            <p>Question Number four will appear right here....</p>
-            <div class="mutuallyExclusiveButtons">
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-            </div>
-            <p>Question Number five will appear right here....</p>
-            <div class="mutuallyExclusiveButtons">
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-                <button class="multiplechoice" onclick="">
-                    p { example CSS; }
-                </button>
-            </div>
-            <button class="checkanswers" onclick="">
-                Check Answers...
-            </button>
+        <p>2. What does the horizontal rule element do?</p>
+        <div class="mutuallyExclusiveButtons">
+          <button class="multiplechoice" onclick="">
+            Creates a new paragraph
+          </button>
+          <button class="multiplechoice" onclick="">
+            creates a visual break between the title and corresponding text.
+          </button>
+          <button class="multiplechoice" onclick="">
+            Skips a line in the paragraph
+          </button>
         </div>
+        <p>
+          3. What heading tag is used for the subheadings, HTML, CSS, and
+          JavaScript?
+        </p>
+        <div class="mutuallyExclusiveButtons">
+          <button class="multiplechoice" onclick="">h1 tag</button>
+          <button class="multiplechoice" onclick="">h2 tag</button>
+          <button class="multiplechoice" onclick="">h3 tag</button>
+        </div>
+        <p>Question Number four will appear right here....</p>
+        <div class="mutuallyExclusiveButtons">
+          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+        </div>
+        <p>Question Number five will appear right here....</p>
+        <div class="mutuallyExclusiveButtons">
+          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+        </div>
+        <button class="checkanswers" onclick="">Check Answers...</button>
+      </div>
     </main>
     <footer-component></footer-component>
-</body>
+  </body>
 </html>

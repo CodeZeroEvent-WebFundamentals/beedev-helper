@@ -28,6 +28,7 @@
           CSS.
         </p>
       </div>
+      <!-- Paragraphs begin -->
       <div id="blockDiv1" class="displayDiv">
         <h2>HTML, CSS, and JavaScript Facts</h2>
         <hr />
@@ -35,12 +36,12 @@
         <p style="color: blue">
           HTML, originating in 1991 by Tim Berners-Lee, marked the foundation of
           web development. Initially a basic markup language, it defined the
-          structure of early web pages. <br />Over time, HTML evolved through
+          structure of early web pages. Over time, HTML evolved through
           versions, with HTML5 (2014) introducing multimedia support, semantic
           elements, and improved accessibility, shaping today's web landscape.
         </p>
         <h3>CSS</h3>
-        <p style="color: green">
+        <p style="color: rgb(32, 45, 30)">
           CSS emerged in 1996, driven by Håkon Wium Lie and Bert Bos, addressing
           HTML's visual limitations. It separated style from structure, enabling
           precise design control. CSS2 (1998) introduced more styling options,
@@ -57,7 +58,7 @@
           powerful libraries like jQuery, frameworks like Angular and React, and
           its ubiquitous use in modern web development.
         </p>
-        <p style="color: orange">
+        <p style="color: #ff4d00">
           The intertwined evolution of HTML, CSS, and JavaScript has continually
           shaped the digital landscape. From their humble beginnings to the
           sophisticated tools they've become, these technologies remain the
@@ -65,23 +66,28 @@
           seamless user experiences across the vast online world.
         </p>
       </div>
+      <!-- Questions Begin -->
       <div class="altBottom">
+        <p>
+          For each question, please click on one of the choices to confirm if
+          your answer is correct.
+        </p>
         <h3>Questions:</h3>
         <p>1. What heading tag is used for the title?</p>
         <div class="mutuallyExclusiveButtons">
-          <button class="multiplechoice" onclick="">h1 tag</button>
-          <button class="multiplechoice" onclick="">h2 tag</button>
-          <button class="multiplechoice" onclick="">h3 tag</button>
+          <button class="multiplechoice" onclick="anOption()">h1 tag</button>
+          <button class="multiplechoice" onclick="theAnswer()">h2 tag</button>
+          <button class="multiplechoice" onclick="anOption()">h3 tag</button>
         </div>
         <p>2. What does the horizontal rule element do?</p>
         <div class="mutuallyExclusiveButtons">
-          <button class="multiplechoice" onclick="">
+          <button class="multiplechoice" onclick="anOption()">
             Creates a new paragraph
           </button>
-          <button class="multiplechoice" onclick="">
+          <button class="multiplechoice" onclick="theAnswer()">
             creates a visual break between the title and corresponding text.
           </button>
-          <button class="multiplechoice" onclick="">
+          <button class="multiplechoice" onclick="anOption()">
             Skips a line in the paragraph
           </button>
         </div>
@@ -90,23 +96,60 @@
           JavaScript?
         </p>
         <div class="mutuallyExclusiveButtons">
-          <button class="multiplechoice" onclick="">h1 tag</button>
-          <button class="multiplechoice" onclick="">h2 tag</button>
-          <button class="multiplechoice" onclick="">h3 tag</button>
+          <button class="multiplechoice" onclick="anOption()">h1 tag</button>
+          <button class="multiplechoice" onclick="anOption()">h2 tag</button>
+          <button class="multiplechoice" onclick="theAnswer()">h3 tag</button>
         </div>
-        <p>Question Number four will appear right here....</p>
+        <p>
+          4. What is the text color for the HTML sentences? Hint: There is the
+          Color name, Hex rgb, and Decimal reference.
+        </p>
         <div class="mutuallyExclusiveButtons">
-          <button class="multiplechoice" onclick="">p { example CSS; }</button>
-          <button class="multiplechoice" onclick="">p { example CSS; }</button>
-          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+          <button class="multiplechoice" onclick="anOption()">
+            blue, #0000tf, rgb(0,0,235)
+          </button>
+          <button class="multiplechoice" onclick="theAnswer()">
+            blue, #0000ff, rgb(0,0,255)
+          </button>
+          <button class="multiplechoice" onclick="anOption()">
+            blue, #0000ff, rgb(0,3,255)
+          </button>
         </div>
-        <p>Question Number five will appear right here....</p>
+        <p>5. What is the text color for the CSS sentences?</p>
         <div class="mutuallyExclusiveButtons">
-          <button class="multiplechoice" onclick="">p { example CSS; }</button>
-          <button class="multiplechoice" onclick="">p { example CSS; }</button>
-          <button class="multiplechoice" onclick="">p { example CSS; }</button>
+          <button class="multiplechoice" onclick="anOption()">
+            olive green
+          </button>
+          <button class="multiplechoice" onclick="theAnswer()">
+            rgb(32,45,30)
+          </button>
+          <button class="multiplechoice" onclick="anOption()">black</button>
         </div>
-        <button class="checkanswers" onclick="">Check Answers...</button>
+        <p>6. What is the text color for the JavaScript sentences?</p>
+        <div class="mutuallyExclusiveButtons">
+          <button class="multiplechoice" onclick="theAnswer()">purple</button>
+          <button class="multiplechoice" onclick="anOption()">#cae0c1</button>
+          <button class="multiplechoice" onclick="anOption()">
+            light purple
+          </button>
+        </div>
+        <p>7. What is the text color for the last two sentences?</p>
+        <div class="mutuallyExclusiveButtons">
+          <button class="multiplechoice" onclick="anOption()">citrus</button>
+          <button class="multiplechoice" onclick="anOption()">#cae0c1</button>
+          <button class="multiplechoice" onclick="theAnswer()">#ff4d00</button>
+        </div>
+        <!-- JavaScript alert box -->
+        <script>
+          function theAnswer() {
+            alert("Correct ✅");
+          }
+        </script>
+        <script>
+          function anOption() {
+            alert("Incorrect, try again ❌");
+          }
+        </script>
       </div>
     </main>
     <footer-component></footer-component>

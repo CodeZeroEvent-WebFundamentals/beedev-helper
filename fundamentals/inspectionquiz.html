@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/playground.css" />
+    <script src="../../js/components/toolNav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <title>Inspection Quiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>BeeDev Services Helper Website</h1>
+      <tool-component></tool-component>
+      <nav class="toolsNav">
+        <a href="../tools.html">Back to Tools Page</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="centerText">Inspection Quiz</h1>
+      <div id="blockDiv1" class="displayDiv">
+        <h2>Directions:</h2>
+        <p style="color: red">
+          Right-click on this webpage, then click Inspect to use the Inspect
+          Element. Inspect the text block below titled "HTML, CSS, and
+          JavaScript Facts" to answer the corresponding questions about HTML and
+          CSS.
+        </p>
+      </div>
+      <!-- Paragraphs begin -->
+      <div id="blockDiv1" class="displayDiv">
+        <h2>HTML, CSS, and JavaScript Facts</h2>
+        <hr />
+        <h3>HTML</h3>
+        <p style="color: rgb(0, 0, 225)">
+          HTML, originating in 1991 by Tim Berners-Lee, marked the foundation of
+          web development. Initially a basic markup language, it defined the
+          structure of early web pages. Over time, HTML evolved through
+          versions, with HTML5 (2014) introducing multimedia support, semantic
+          elements, and improved accessibility, shaping today's web landscape.
+        </p>
+        <h3>CSS</h3>
+        <p style="color: rgb(32, 45, 30)">
+          CSS emerged in 1996, driven by Håkon Wium Lie and Bert Bos, addressing
+          HTML's visual limitations. It separated style from structure, enabling
+          precise design control. CSS2 (1998) introduced more styling options,
+          while CSS3 advancements (2001 onward) expanded capabilities with
+          animations, transitions, and responsive design, revolutionizing web
+          aesthetics.
+        </p>
+        <h3>JavaScript</h3>
+        <p style="color: purple">
+          JavaScript, created by Brendan Eich in 1995 at Netscape, added
+          interactivity to static web pages. Initially named LiveScript, it
+          evolved rapidly, gaining popularity for client-side scripting.
+          ECMAScript standards (1997 onward) standardized JavaScript, leading to
+          powerful libraries like jQuery, frameworks like Angular and React, and
+          its ubiquitous use in modern web development.
+        </p>
+        <p style="color: #ff4d00">
+          The intertwined evolution of HTML, CSS, and JavaScript has continually
+          shaped the digital landscape. From their humble beginnings to the
+          sophisticated tools they've become, these technologies remain the
+          backbone of web development, enabling creativity, functionality, and
+          seamless user experiences across the vast online world.
+        </p>
+      </div>
+      <!-- Questions Begin -->
+      <div class="altBottom">
+        <p>
+          For each question, please click on one of the choices to confirm if
+          your answer is correct.
+        </p>
+        <h3>Questions:</h3>
+        <p>1. What heading tag is used for the title?</p>
+        <div>
+          <button class="multiplechoice" onclick="anOption(this)">
+            h1 tag
+          </button>
+          <button class="multiplechoice" onclick="theAnswer(this)">
+            h2 tag
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">
+            h3 tag
+          </button>
+        </div>
+        <p>2. What does the horizontal rule element do?</p>
+        <div>
+          <button class="multiplechoice" onclick="anOption(this)">
+            Creates a new paragraph
+          </button>
+          <button class="multiplechoice" onclick="theAnswer(this)">
+            Creates a visual break between the title and corresponding text.
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">
+            Skips a line in the paragraph
+          </button>
+        </div>
+        <p>
+          3. What heading tag is used for the subheadings, HTML, CSS, and
+          JavaScript?
+        </p>
+        <div>
+          <button class="multiplechoice" onclick="anOption(this)">
+            h1 tag
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">
+            h2 tag
+          </button>
+          <button class="multiplechoice" onclick="theAnswer(this)">
+            h3 tag
+          </button>
+        </div>
+        <p>
+          4. What is the text color for the HTML sentences? Hint: There is the
+          Color name, Hex rgb, and Decimal reference.
+        </p>
+        <div>
+          <button class="multiplechoice" onclick="anOption(this)">
+            blue, #0000tf, rgb(0,0,235)
+          </button>
+          <button class="multiplechoice" onclick="theAnswer(this)">
+            blue, #0000ff, rgb(0,0,255)
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">
+            blue, #0000ff, rgb(0,3,255)
+          </button>
+        </div>
+        <p>5. What is the text color for the CSS sentences?</p>
+        <div>
+          <button class="multiplechoice" onclick="anOption(this)">
+            olive green
+          </button>
+          <button class="multiplechoice" onclick="theAnswer(this)">
+            rgb(32,45,30)
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">black</button>
+        </div>
+        <p>6. What is the text color for the JavaScript sentences?</p>
+        <div>
+          <button class="multiplechoice" onclick="theAnswer(this)">
+            purple
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">
+            #cae0c1
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">
+            light purple
+          </button>
+        </div>
+        <p>7. What is the text color for the last two sentences?</p>
+        <div>
+          <button class="multiplechoice" onclick="anOption(this)">
+            citrus
+          </button>
+          <button class="multiplechoice" onclick="anOption(this)">
+            #cae0c1
+          </button>
+          <button class="multiplechoice" onclick="theAnswer(this)">
+            #ff4d00
+          </button>
+        </div>
+        <!-- JavaScript alert box -->
+        <script>
+          function theAnswer(button) {
+            alert("Correct ✅");
+            button.style.backgroundColor = "lightgreen";
+          }
+        </script>
+        <script>
+          function anOption(button) {
+            alert("Incorrect, try again ❌");
+            button.style.backgroundColor = "red";
+          }
+        </script>
+      </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/playgrounds/cssTools.js"></script>
+  </body>
+</html>
